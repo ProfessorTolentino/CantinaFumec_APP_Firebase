@@ -5,7 +5,7 @@ Projeto Base Cantina fumec com integração com firebase (Projeto incompleto, ap
 
 * [Download o instalador](https://nodejs.org/) para Node.js 10 ou superior.
 * Instale o CLI IONIC globalmente: `npm install -g @ionic/cli`, se tiver com dúvidas, veja no [site oficial](https://ionicframework.com/docs/intro/cli).
-* Clone este repositório: `git clone https://github.com/ionic-team/ionic-conference-app.git`.
+* Clone este repositório: `https://github.com/ProfessorTolentino/CantinaFumec_APP_Firebase_v2.git`.
 * Execute `npm install` da raiz do projeto.
 * Alterar as configurações do firebase dentro do arquivo "firebaseConfig.ts" que está na pasta "src/app".
 ** Para saber como fazer, veja o vídeo [Ionic - Firebase - Autenticação](https://www.youtube.com/watch?v=sW2OWySfiI4)

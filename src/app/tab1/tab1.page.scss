@@ -1,0 +1,34 @@
+ion-header ion-toolbar {
+  --background: #ef473a;
+  color: #fff;
+}
+
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+.headerProfile {
+  height: 20vh;
+  background-repeat: no-repeat !important;
+  background-size: auto !important;
+
+  .title {
+    color: #fff;
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+  .image {
+    border: #fff 4px solid;
+    top: 4vh;
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-position-x: -14px  !important;
+    background-position-y: -12px  !important;
+
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    border-radius: 60px;
+  }
+}

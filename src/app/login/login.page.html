@@ -1,0 +1,60 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content class="background-image">
+
+  <div class="login-logo animated infinite pulse slower">
+    <img src="../../assets/imgs/logo-full2.png" alt="Ionic logo">
+  </div>
+
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked" color="primary">Email</ion-label>
+        <ion-input formControlName="email" name="email" type="text" spellcheck="false" autocapitalize="off" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <!-- <p [hidden]="submitted == false" class="ion-padding-start">
+          {{this.loginError}}
+        </p>  -->
+      </ion-text>
+
+      <ion-item>
+        <ion-label position="stacked" color="primary">Senha</ion-label>
+        <ion-input formControlName="password" name="password" type="password" [type]="passwordType" clearOnEdit="false"
+          required>
+        </ion-input>
+        <ion-icon [name]="passwordIcon" slot="end" (click)='hideShowPassword()' style="margin: auto;"></ion-icon>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p [hidden]="submitted == false" class="ion-padding-start">
+          {{this.loginError}}
+        </p>
+      </ion-text>
+    </ion-list>
+
+    <ion-item class="bg-transparent">
+      <ion-label style="font-size: 17px; font-weight: bold; " class="bg-transparent">Lembra senha
+      </ion-label>
+      <ion-checkbox color="light" slot="start" formControlName="lastpassword" name="lastpassword"></ion-checkbox>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button class="btn-grad animated bounceInLeft fast" [disabled]="!loginForm.valid" type="submit"
+          expand="block">Entrar</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="btn-grad-orange animated bounceInRight fast" [disabled]="!loginForm.valid"
+          (click)="onSignup()" expand="block">Registrar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>

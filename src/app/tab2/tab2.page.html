@@ -1,0 +1,17 @@
+<ion-header [translucent]="true" class="ion-text-center ion-text-uppercase">
+  <ion-toolbar>
+    <ion-title>
+      Cantina
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <ion-card class="content" *ngFor="let cat of listCategory" [routerLink]="['/list-product']" [queryParams]="cat" routerDirection="forward">
+    <div class="card-title">{{cat.cardTitle}}</div>
+    <div class="card-subtitle">{{cat.cardSubtitle}}</div>
+    <img [src]="cat.imagem"/>
+  </ion-card>
+</ion-content>
